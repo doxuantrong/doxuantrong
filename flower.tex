@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage{xpicture, fp, multido}
+
+\newcommand\flower[3]{
+\begin{Picture}[white!50!yellow](-3,-3)(3,3)
+\polarreference\degreesangles
+\pictcolor{red!80}
+\multido{\ra=#2+#3}{#1}{
+\fpAdd{\ra}{-#2}{\rc}
+\fpAdd{\ra}{#2}{\rd}
+\FPcos{\rb}{#2}
+\FPabs{\rbb}{\rb}
+\FPdiv{\re}{1}{\rbb}
+\Polygon(0,0)(\re,\rc)(2,\ra)(\re,\rd)
+\xLINE(0,0)(2,\ra)
+}
+\end{Picture}
+}
+
+\begin{document}
+
+\flower{20}{9}{18} %30-petal flower
+\flower{30}{6}{12} %20-petal flower
+
+\end{document}
