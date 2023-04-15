@@ -1,0 +1,4 @@
+- Hi, I'm Do Xuan Trong, I'm from Vietnam.
+- I am interested in Mathematics and Programming.
+- Currently, I am a student at Hanoi University of Science and Technology (HUST).
+- You can read my MATHEMATICS blog at https://artofproblemsolving.com/community/c975970. I created it since I was a high school student (it's almost about Inequalities).
